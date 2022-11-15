@@ -1,0 +1,96 @@
+.formulario--principal{
+    background: var(--cor-formulario);
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 10px; 
+}
+
+.inputBox {
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--cor-verde);
+    outline: none;
+    color: var(--cor-branco);
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: var(--cor-verde)
+}
+
+#data_aquisicao {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.check {
+    display: inline;
+    margin: 0 20px 15px 0;
+    padding: 10px;
+}
+
+#submit {
+    background: var(--cor-azul);
+    border: none;
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    color: var(--cor-branco);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.edit--cadastro {
+    background: var(--cor-preto);
+    color: var(--cor-verde);
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.edit-form {
+    text-align: center;
+    margin: 10px;
+}
+
+.adicionar {
+    background: var(--cor-azul);
+    color: var(--cor-branca);
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+}
+
+.inputBoxVacinacao {
+    margin: 0px 10px 0px 10px;
+}
+
+.inputBoxFiliacao {
+    margin: 0px 10px 0px 10px;
+}
+
+.check--cuidado {
+    margin: 0 10px 5px 0;
+    padding: 10px;
+}

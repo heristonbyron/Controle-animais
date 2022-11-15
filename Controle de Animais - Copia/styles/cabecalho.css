@@ -1,0 +1,17 @@
+.cabecalho {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--cor-verde);
+    border-radius: 10px;
+}
+
+.cabecalho--imagem {
+    width: 100vw;
+    height: 25vh;
+}
+
+.cabecalho--texto {
+    font-size: 35px;
+    padding: 1px;
+}

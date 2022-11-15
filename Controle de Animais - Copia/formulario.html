@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de animais - INA </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="/imagens/bois.jpg" class="cabecalho--imagem">
+        <h1 class="cabecalho--texto">Cadastrar Animal</h1>
+        <a href="/index.html" class="botao--voltar">Voltar</a>
+    </header>
+    <section class="formulario--principal">
+        <form action="">
+            <!--Ticket do Animal-->
+            <div class="inputBox">
+                <input type="number" name="ticket" id="ticket" class="inputUser" required>
+                <label for="ticket" class="labelInput">Ticket do Animal</label>
+            </div>
+            <br>
+            <!--Forma de Aquisição-->
+            <p>Forma de Aquisição: </p>
+            <br>
+            <div class="check">
+                <input type="radio" id="comprado" name="aquisicao" value="comprado" required>
+                <label for="comprado">Comprado</label>
+            </div>
+            <div class="check">
+                <input type="radio" id="nascido" name="aquisicao" value="nascido" required>
+                <label for="nascido">Nascido</label>
+            </div>
+            <br><br><br>
+            <!--Nome do Proprietário-->
+            <div class="inputBox">
+                <input type="text" name="proprietario" id="proprietario" class="inputUser" required>
+                <label for="ticket" class="labelInput">Nome do Proprietário</label>
+            </div>
+            <br>
+            <!--Sexo-->
+            <p>Sexo: </p>
+            <br>
+            <div class="check">
+                <input type="radio" id="macho" name="sexo" value="macho" required>
+                <label for="macho">Macho</label>
+            </div>
+            <div class="check">
+                <input type="radio" id="femea" name="sexo" value="femea" required>
+                <label for="femea">Fêmea</label>
+            </div>
+            <br><br><br>
+            <!--Ticket da Mãe-->
+            <div class="inputBox">
+                <input type="number" name="ticket_mae" id="ticket_mae" class="inputUser" required>
+                <label for="ticket" class="labelInput">Ticket da Mãe</label>
+            </div>
+            <br>
+            <!--Data da Aquisição-->
+            <label for="ticket">Data da Aquisição:</label>
+            <input type="date" name="data_aquisicao" id="data_aquisicao" required>
+            <br><br>
+            <!--Valor da Compra-->
+            <div class="inputBox">
+                <input type="number" name="valor" id="valor" class="inputUser" required>
+                <label for="ticket" class="labelInput">Valor da Compra</label>
+            </div>
+            <br>
+            <!--Vacinação-->
+            <section class="edit--cadastro">
+                <h2 class="edit-form">Vacinação</h2>
+                <div class="inputBox">
+                    <label for="ticket">Data de Vacinação:</label>
+                    <input type="date" name="data_aquisicao" id="data_aquisicao">
+                </div>
+                <br>
+                <div class="inputBox inputBoxVacinacao">
+                    <input type="text" name="vacinacao" id="vacinacao" class="inputUser" required>
+                    <label for="ticket" class="labelInput">Nome da Vacinação</label>
+                    <br>
+                    <button class="adicionar">Adicionar</button>
+                </div>
+                <br>
+            </section>
+            <br>
+            <!--Filiação-->
+            <section class="edit--cadastro">
+                <h2 class="edit-form">Filiação</h2>
+                <br>
+                <div class="inputBox inputBoxFiliacao">
+                    <input type="number" name="filiacao" id="filiacao" class="inputUser" required>
+                    <label for="ticket" class="labelInput">Ticket dos filhos</label>
+                    <br>
+                    <button class="adicionar">Adicionar</button>
+                </div>
+
+            </section>
+            <br>
+            <!--Cuidado-->
+            <section class="edit--cadastro">
+                <h2 class="edit-form">Cuidado</h2>
+                <br>
+                <div class="check--cuidado">
+                    <input type="radio" id="bom" name="bom" value="bom" required>
+                    <label for="bom">Bom</label>
+                </div>
+                <div class="check--cuidado">
+                    <input type="radio" id="razoavel" name="razoavel" value="razoavel" required>
+                    <label for="razoavel">Razoável</label>
+                </div>
+                <div class="check--cuidado">
+                    <input type="radio" id="ruim" name="ruim" value="ruim" required>
+                    <label for="ruim">Ruim</label>
+                </div>
+            </section>
+            <br><br>
+            <input type="submit" name="submit" id="submit" value="Cadastrar">
+        </form>
+    </section>
+</body>
+</html>
