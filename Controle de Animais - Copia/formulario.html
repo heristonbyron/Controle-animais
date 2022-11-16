@@ -17,7 +17,7 @@
         <a href="/index.html" class="botao--voltar">Voltar</a>
     </header>
     <section class="formulario--principal">
-        <form action="">
+        <form id="formulario" action="">
             <!--Ticket do Animal-->
             <div class="inputBox">
                 <input type="number" name="ticket" id="ticket" class="inputUser" required>
@@ -28,11 +28,11 @@
             <p>Forma de Aquisição: </p>
             <br>
             <div class="check">
-                <input type="radio" id="comprado" name="aquisicao" value="comprado" required>
+                <input type="radio" id="comprado" name="aquisicao" value="comprado" onclick="ativarReadonly()" required>
                 <label for="comprado">Comprado</label>
             </div>
             <div class="check">
-                <input type="radio" id="nascido" name="aquisicao" value="nascido" required>
+                <input type="radio" id="nascido" name="aquisicao" value="nascido" onclick="desativarReadonly()" required>
                 <label for="nascido">Nascido</label>
             </div>
             <br><br><br>
@@ -56,7 +56,7 @@
             <br><br><br>
             <!--Ticket da Mãe-->
             <div class="inputBox">
-                <input type="number" name="ticket_mae" id="ticket_mae" class="inputUser" required>
+                <input type="number" name="ticket_mae" id="ticket_mae" class="inputUser">
                 <label for="ticket" class="labelInput">Ticket da Mãe</label>
             </div>
             <br>
@@ -66,60 +66,61 @@
             <br><br>
             <!--Valor da Compra-->
             <div class="inputBox">
-                <input type="number" name="valor" id="valor" class="inputUser" required>
+                <input type="number" name="valor" id="valor" class="inputUser">
                 <label for="ticket" class="labelInput">Valor da Compra</label>
             </div>
             <br>
             <!--Vacinação-->
-            <section class="edit--cadastro">
-                <h2 class="edit-form">Vacinação</h2>
-                <div class="inputBox">
-                    <label for="ticket">Data de Vacinação:</label>
-                    <input type="date" name="data_aquisicao" id="data_aquisicao">
-                </div>
-                <br>
-                <div class="inputBox inputBoxVacinacao">
-                    <input type="text" name="vacinacao" id="vacinacao" class="inputUser" required>
-                    <label for="ticket" class="labelInput">Nome da Vacinação</label>
+                <section class="edit--cadastro">
+                    <h2 class="edit-form">Vacinação</h2>
+                    <div class="inputBox">
+                        <label for="ticket">Data de Vacinação:</label>
+                        <input type="date" name="data_aquisicao" id="data_aquisicao">
+                    </div>
                     <br>
-                    <button class="adicionar">Adicionar</button>
-                </div>
-                <br>
-            </section>
-            <br>
-            <!--Filiação-->
-            <section class="edit--cadastro">
-                <h2 class="edit-form">Filiação</h2>
-                <br>
-                <div class="inputBox inputBoxFiliacao">
-                    <input type="number" name="filiacao" id="filiacao" class="inputUser" required>
-                    <label for="ticket" class="labelInput">Ticket dos filhos</label>
+                    <div class="inputBox inputBoxVacinacao">
+                        <input type="text" name="vacinacao" id="vacinacao" class="inputUser" required>
+                        <label for="ticket" class="labelInput">Nome da Vacinação</label>
+                        <br>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
                     <br>
-                    <button class="adicionar">Adicionar</button>
-                </div>
+                </section>
+                <br>
+                <!--Filiação-->
+                <section class="edit--cadastro">
+                    <h2 class="edit-form">Filiação</h2>
+                    <br>
+                    <div class="inputBox inputBoxFiliacao">
+                        <input type="number" name="filiacao" id="filiacao" class="inputUser" required>
+                        <label for="ticket" class="labelInput">Ticket dos filhos</label>
+                        <br>
+                        <button class="adicionar">Adicionar</button>
+                    </div>
 
-            </section>
-            <br>
-            <!--Cuidado-->
-            <section class="edit--cadastro">
-                <h2 class="edit-form">Cuidado</h2>
+                </section>
                 <br>
-                <div class="check--cuidado">
-                    <input type="radio" id="bom" name="bom" value="bom" required>
-                    <label for="bom">Bom</label>
-                </div>
-                <div class="check--cuidado">
-                    <input type="radio" id="razoavel" name="razoavel" value="razoavel" required>
-                    <label for="razoavel">Razoável</label>
-                </div>
-                <div class="check--cuidado">
-                    <input type="radio" id="ruim" name="ruim" value="ruim" required>
-                    <label for="ruim">Ruim</label>
-                </div>
-            </section>
+                <!--Cuidado-->
+                <section class="edit--cadastro">
+                    <h2 class="edit-form">Cuidado</h2>
+                    <br>
+                    <div class="check--cuidado">
+                        <input type="radio" id="bom" name="bom" value="bom" required>
+                        <label for="bom">Bom</label>
+                    </div>
+                    <div class="check--cuidado">
+                        <input type="radio" id="razoavel" name="razoavel" value="razoavel" required>
+                        <label for="razoavel">Razoável</label>
+                    </div>
+                    <div class="check--cuidado">
+                        <input type="radio" id="ruim" name="ruim" value="ruim" required>
+                        <label for="ruim">Ruim</label>
+                    </div>
+                </section>
             <br><br>
             <input type="submit" name="submit" id="submit" value="Cadastrar">
         </form>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
